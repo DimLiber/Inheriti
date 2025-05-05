@@ -1,0 +1,17 @@
+body {
+  background-color: #ffffff;
+}
+
+span1 {
+  font-size: 22px;
+  text-align: right;
+  font-family: "font.ttc";
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  color: #0d5ae5;
+}
