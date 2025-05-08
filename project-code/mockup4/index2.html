@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+  <meta charset="UTF-8">
+  <title>Οικογενειακή Κατάσταση</title>
+  <link rel="stylesheet" href="style2.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <div class="logo">
+        <img src="logo.png" alt="InHeriti Logo" class="logo-img" />
+      </div>
+      <div class="menu">
+        <div class="menu-item">📄 Πληροφορίες</div>
+        <div class="menu-item">👤 Επιλογή Χρήστη</div>
+
+        <details class="menu-group">
+          <summary class="menu-item has-sub">
+            📑 Η Διαθήκη μου
+            <span class="arrow"></span>
+          </summary>
+          <div class="submenu">
+            <div class="menu-item sub active">📘 Οικ. Κατάσταση</div>
+          </div>
+        </details>
+
+        <details open class="menu-group">
+          <summary class="menu-item has-sub">
+            🏠 Περιουσιακά Στοιχεία
+            <span class="arrow"></span>
+          </summary>
+          <div class="submenu">
+            <div class="menu-item sub">Ακίνητα και Οχήματα</div>
+            <div class="menu-item sub">Τραπεζικοί Λογαριασμοί</div>
+            <div class="menu-item sub">Crypto Assets</div>
+          </div>
+        </details>
+
+        <div class="menu-item">👥 Κληρονόμοι</div>
+        <div class="menu-item">⚖️ Εκτελεστής</div>
+      </div>
+    </div>
+
+    <!-- Κύριο περιεχόμενο -->
+    <div class="main">
+      <div class="top-bar">
+        <div class="user">
+          <b>Ονοματεπώνυμο</b><br>
+          <span style="font-weight: normal;">Κληρονομούμενος</span>
+        </div>
+      </div>
+
+      <!-- Μπλε κουτί -->
+      <div class="blue-box">
+        <div class="option disabled-option">Ανάκτηση Οικ. Κατάστασης</div>
+        <div class="option active-option">Επόμενο</div>
+      </div>
+
+      <!-- Κείμενο -->
+      <p class="below-text">
+        Επιλέγοντας “Επόμενο” συμφωνείτε στην άντληση των οικογενειακών σας στοιχείων από το Ληξιαρχείο
+      </p>
+    </div>
+  </div>
+</body>
+</html>
