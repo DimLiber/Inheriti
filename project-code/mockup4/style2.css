@@ -1,0 +1,164 @@
+body {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  background-color: white;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+  background-color: white;
+}
+
+.sidebar {
+  width: 240px;
+  background-color: white;
+  border-right: 1px solid #e0e0e0;
+  padding: 20px;
+}
+
+.logo-img {
+  max-width: 160px;
+  height: auto;
+  margin-bottom: 40px;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.menu-item {
+  font-size: 15px;
+  padding: 6px 10px;
+  border-radius: 6px;
+  color: #333;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.menu-item:hover {
+  background-color: #f2f6ff;
+}
+
+.menu-item.sub {
+  font-size: 16px;
+  color: #555;
+  padding-left: 20px;
+  position: relative;
+}
+
+.menu-item.sub::before {
+  content: "•";
+  position: absolute;
+  left: 10px;
+  top: 0;
+}
+
+.menu-item.sub.active {
+  background-color: #d9eaff;
+  color: #0d5ae5;
+  font-weight: bold;
+  border-radius: 20px;
+  padding: 6px 12px;
+}
+
+.menu-group summary {
+  list-style: none;
+  cursor: pointer;
+}
+
+.menu-group summary::-webkit-details-marker {
+  display: none;
+}
+
+.arrow::after {
+  content: "▼";
+  font-size: 12px;
+  color: #666;
+  margin-left: auto;
+}
+
+.menu-group:not([open]) .arrow::after {
+  content: "►";
+}
+
+.submenu {
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-top: 5px;
+}
+
+.main {
+  flex-grow: 1;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.top-bar {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+}
+
+.user {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/* Μπλε πλαίσιο */
+.blue-box {
+  background: linear-gradient(to bottom right, #0094ff, #0062e3);
+  border-radius: 40px;
+  padding: 40px 30px;
+  width: 320px;
+  margin: 40px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.option {
+  width: 260px;
+  height: 50px;
+  border-radius: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Inter', sans-serif;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.disabled-option {
+  background-color: #eeeeee;
+  color: #84afe9;
+  border: 1px solid #333;
+}
+
+.active-option {
+  background-color: #a6d9ff;
+  color: black;
+  border: none;
+  cursor: pointer;
+}
+
+/* Κείμενο */
+.below-text {
+  margin-top: 30px;
+  font-size: 14px;
+  color: #0d5ae5;
+  text-align: center;
+  max-width: 400px;
+}
