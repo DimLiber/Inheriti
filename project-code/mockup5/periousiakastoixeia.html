@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+  <meta charset="UTF-8">
+  <title>Περιουσιακά Στοιχεία</title>
+  <link rel="stylesheet" href="style5.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <div class="logo">
+  	<img src="logo.png" alt="InHeriti Logo" height="40" />
+      </div>
+      <div class="menu">
+
+        <div class="menu-item">📄 Πληροφορίες</div>
+        <div class="menu-item">👤 Επιλογή Χρήστη</div>
+        
+        <details class="menu-group">
+          <summary class="menu-item has-sub">
+            📑 Η Διαθήκη μου
+            <span class="arrow"></span>
+          </summary>
+          <div class="submenu">
+            <div class="menu-item sub">Οικ. Κατάσταση</div>
+          </div>
+        </details>
+
+
+        <!-- Περιουσιακά Στοιχεία -->
+        <details open class="menu-group">
+          <summary class="menu-item has-sub">
+            🏠 Περιουσιακά Στοιχεία
+            <span class="arrow"></span>
+          </summary>
+          <div class="submenu">
+            <div class="menu-item sub active">Όλα τα στοιχεία</div>
+            <div class="menu-item sub">Ακίνητα και Οχήματα</div>
+            <div class="menu-item sub">Τραπεζικοί Λογαριασμοί</div>
+            <div class="menu-item sub">Crypto Assets</div>
+          </div>
+        </details>
+
+        <div class="menu-item">👥 Κληρονόμοι</div>
+        <div class="menu-item">⚖️ Εκτελεστής</div>
+      </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main">
+      <div class="top-bar">
+        <div class="user"><b>Ονοματεπώνυμο</b><br><span style="font-weight: normal;">Κληρονομούμενος</span></div>
+      </div>
+
+      <div class="card">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Κωδικός</th>
+              <th>Τίτλος στοιχείου</th>
+              <th>Ημ/νία εισαγωγής</th>
+              <th>Ποσοστό Ιδιοκτησίας</th>
+              <th>Ιδιοκτήτης</th>
+            </tr>
+          </thead>
+          <tbody>
+              <tr><td>51</td><td><a href="#" class="link">Αυτοκίνητο</a></td><td>29 Σεπτ</td><td>100%</td><td>Δημήτρης</td></tr>
+              <tr><td>52</td><td><a href="#" class="link">Μηχανή</a></td><td>5 Ιουν</td><td>50%</td><td>Σπυρίδων</td></tr>
+              <tr><td>53</td><td><a href="#" class="link">Διαμέρισμα 75τ.μ.</a></td><td>22 Φεβ</td><td>80%</td><td>Νεφέλη</td></tr>
+              <tr class="selected">
+                <td>54</td>
+                <td><a href="#" class="link">Επενδυτικός Λογαριασμός</a></td>
+                <td>10 Απρ</td>
+                <td>75%</td>
+                <td style="display: flex; justify-content: space-between; align-items: center;">
+                  <span>Αγγελική</span>
+                  <span style="display: flex; gap: 8px;">
+                    <button class="icon-button" title="Επεξεργασία">✏️</button>
+                    <button class="icon-button" title="Διαγραφή">🗑️</button>
+                  </span>
+                </td>
+              </tr>
+              <tr><td>55</td><td><a href="#" class="link">Ψηφιακό πορτοφόλι #1</a></td><td>30 Δεκ</td><td>100%</td><td>Χρήστος</td></tr>
+              <tr><td>56</td><td><a href="#" class="link">Κοσμήματα</a></td><td>17 Νοε</td><td>100%</td><td>Αγγελική</td></tr>
+              <tr><td>57</td><td><a href="#" class="link">Πίνακας 19ου αιώνα</a></td><td>14 Ιαν</td><td>45%</td><td>Δημήτρης</td></tr>
+              <tr><td>58</td><td><a href="#" class="link">Ψηφιακό πορτοφόλι #2</a></td><td>25 Οκτ</td><td>100%</td><td>Σπυρίδων</td></tr>
+              <tr><td>59</td><td><a href="#" class="link">Ρολόι χειρός</a></td><td>7 Αυγ</td><td>100%</td><td>Χρήστος</td></tr>
+              <tr><td>60</td><td><a href="#" class="link">Τραπεζική Θυρίδα</a></td><td>12 Ιαν</td><td>65%</td><td>Νεφέλη</td></tr>
+          </tbody>
+
+        </table>
+        <button class="button"><span class="icon">➕</span>Προσωπικά Αντικείμενα</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
